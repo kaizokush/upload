@@ -1,9 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Youtube</title>
+	<title>HTML Forms</title>
+	<style type="text/css">
+		th{
+			text-align: left;
+		}
+	</style>
 </head>
 <body>
-Check how to use git for windows!
+	<h1>Prepare a Resume</h1>
+	<form>
+		<table width="100%">
+			<tr>
+				<th width="20%">Name:</th>
+				<td width="80%">
+					<input type="text" name="first_name" placeholder="First Name"> &nbsp;<input type="text" name="last_name" placeholder="Last Name">
+				</td>
+			</tr>
+			<tr>
+				<th>Gender:</th>
+				<td>
+					<select name="gender">
+						<option>Select Gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>		
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Date of Birth:</th>
+				<td>
+					<select name="month">
+						<option>Select Month</option>
+						<option value="jan">January</option>
+						<option value="feb">February</option>
+						<option value="mar">March</option>
+						<option value="apr">April</option>
+						<option value="may">May</option>
+						<option value="jun">June</option>
+						<option value="jul">July</option>
+						<option value="aug">August</option>
+						<option value="sep">September</option>
+						<option value="oct">October</option>
+						<option value="nov">November</option>
+						<option value="dec">December</option>
+					</select>
+					<select name="year">
+						<option>Select Year</option>
+						<option>1990</option>
+						<option>1991</option>
+						<option>1992</option>
+						<option>1993</option>
+						<option>1994</option>
+						<option>1995</option>
+						<option>1996</option>
+						<option>1997</option>
+						<option>1998</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Contact No.</th>
+				<td> <input type="text" name="no" placeholder="Enter Contact No."></td>
+			</tr>
+			<tr>
+				<th>Email:</th>
+				<td><input type="email" name="e" placeholder="Enter Email Id"></td>
+			</tr>
+			<tr>
+				<th>Education:</th>
+				<td>
+					<table>
+						<tr>
+							<th width="50">Level</th>
+							<th width="150">Board</th>
+							<th width="300">Institute</th>
+							<th>Division</th>
+						</tr>
+						<tr>
+							<td>
+								<select name="level">
+									<option value="sl">School Level</option>
+									<option value="il">Intermediate Level</option>
+									<option value="bl">Bachelor</option>
+									<option value="ml">Masters</option>
+								</select>
+							</td>
+							<td>
+								<select name="board">
+									<option value="ng">Nepal Government</option>
+									<option value="hs">HSEB</option>
+									<option value="tu">Tribhuwan University</option>
+									<option value="pu">Pokhara University</option>
+									<option value="ppu">Purbanchal University</option>
+									<option value="ku">Kathmanu University</option>
+								</select>
+							</td>
+							<td>
+								<input type="text" name="inst" placeholder="Name of Institute" width="300px">
+							</td>
+							<td>
+								<select name="div">
+									<option value="f">First</option>
+									<option value="s">Second</option>
+									<option value="t">Third</option>
+									<option value="d">Distinction</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<th>Trainings:</th>
+				<td>
+					<table>
+						<tr>
+							<th width="200">Training</th>
+							<th>Institute</th>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" name="t1" placeholder="What was the training about?">
+							</td>
+							<td>
+								<input type="text" name="i1" placeholder="Name of institute">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<th>Achievements:</th>
+				<td>
+					<textarea placeholder="Tell us more about your Achievement." ></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" name="">
+				</td>
+			</tr>
+		</table>	
+	</form>
 </body>
 </html>
